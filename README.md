@@ -11,23 +11,43 @@ MIT — see [LICENSE](LICENSE)
 
 ## 🛠 Build
 
+### Manual build (modern Windows)
+
+```bat
+rc /nologo XPNotepad.rc
+
+ml /nologo /c /coff XPNotepad.asm
+
+link /nologo ^
+  /subsystem:windows ^
+  /machine:x86 ^
+  /entry:start ^
+  XPNotepad.obj XPNotepad.res ^
+  kernel32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
+```
+
+### Windows XP–targeted build
+
+```bat
+rc /nologo XPNotepad.rc
+
+ml /nologo /c /coff XPNotepad.asm
+
+link /nologo ^
+  /out:XPNotepad_XP.exe ^
+  /subsystem:windows,5.01 ^
+  /machine:x86 ^
+  /entry:start ^
+  XPNotepad.obj XPNotepad.res ^
+  kernel32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
+```
+
 ### Quick build
+
+```bat
 build.bat
 build_xp.bat
-
-### Manual build (modern Windows)
-rc /nologo XPNotepad.rc
-ml /nologo /c /coff XPNotepad.asm
-link /nologo /subsystem:windows /machine:x86 /entry:start ^
-XPNotepad.obj XPNotepad.res ^
-kernel32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
-
-### Windows XP-targeted build
-rc /nologo XPNotepad.rc
-ml /nologo /c /coff XPNotepad.asm
-link /nologo /out:XPNotepad_XP.exe /subsystem:windows,5.01 /machine:x86 /entry:start ^
-XPNotepad.obj XPNotepad.res ^
-kernel32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
+```
 
 ---
 
