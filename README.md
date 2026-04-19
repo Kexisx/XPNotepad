@@ -54,12 +54,6 @@ kernel32.lib user32.lib gdi32.lib comdlg32.lib comctl32.lib
 
 ---
 
-## 📸 Screenshot
-
-(Add your screenshot here later)
-
----
-
 ## 👤 Author
 
 Chris Wager
