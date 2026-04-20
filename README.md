@@ -1,6 +1,18 @@
 # XPNotepad (MASM / ml)
 
-A lightweight Windows XP-style text editor written in MASM.
+A lightweight Windows XP-style text editor written entirely in MASM using the Win32 API.
+
+[![Download](https://img.shields.io/badge/Download-Pre--release-blue)](https://github.com/Kexisx/XPNotepad/releases)
+
+---
+
+## 📦 Download
+
+A **digitally signed pre-release build** is available:
+
+👉 [Download XPNotepad (pre-release)](https://github.com/Kexisx/XPNotepad/releases)
+
+> ⚠️ This is an early build intended for testing and feedback.
 
 ---
 
